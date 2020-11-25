@@ -18,7 +18,7 @@ class User {
   created_at: Date;
 
   @UpdateDateColumn()
-  udated_at: Date;
+  updated_at: Date;
 }
 
 export default User;
