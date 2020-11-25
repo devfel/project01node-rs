@@ -6,7 +6,7 @@ export class CreateUsers1606253180453 implements MigrationInterface {
       new Table({
         name: "users",
         columns: [
-          { name: "id", type: "varchar", isPrimary: true, generationStrategy: "uuid", default: "uuid_generate_v4()" },
+          { name: "id", type: "uuid", isPrimary: true, generationStrategy: "uuid", default: "uuid_generate_v4()" },
           { name: "name", type: "varchar" },
           { name: "email", type: "varchar", isUnique: true },
           { name: "password", type: "varchar" },

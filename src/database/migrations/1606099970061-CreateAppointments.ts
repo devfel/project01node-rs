@@ -6,7 +6,7 @@ export class CreateAppointments1606099970061 implements MigrationInterface {
       new Table({
         name: "appointments",
         columns: [
-          { name: "id", type: "varchar", isPrimary: true, generationStrategy: "uuid", default: "uuid_generate_v4()" },
+          { name: "id", type: "uuid", isPrimary: true, generationStrategy: "uuid", default: "uuid_generate_v4()" },
           { name: "provider", type: "varchar" },
           { name: "date", type: "timestamp with time zone" },
           { name: "created_at", type: "timestamp", default: "now()" },
